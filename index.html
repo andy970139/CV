@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #f1f1f1;
+			padding: 20px;
+			font-family: Arial;
+		}
+
+		/* Center website */
+		.main {
+			
+
+
+
+
+			max-width: 1000px;
+			margin: auto;
+		}
+
+		h1 {
+			font-size: 50px;
+			word-break: break-all;
+		}
+
+		.row {
+			margin: 8px -16px;
+		}
+
+		/* Add padding BETWEEN each column */
+		.row,
+		.row > .column {
+			padding: 8px;
+		}
+
+		/* Create four equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 25%;
+		}
+
+		/* Clear floats after rows */ 
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Content */
+		.content {
+			background-color: white;
+			padding: 10px;
+		}
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media screen and (max-width: 900px) {
+			.column {
+				width: 50%;
+			}
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+			}
+		}
+		#toeic{
+
+			width:100px;
+			height:100px;
+			background:#4d4d4d;
+			border-radius: 99em;
+			text-align: center;
+
+		}
+		.container {
+			width: 100%; /* Full width */
+			background-color: #ddd; /* Grey background */
+		}
+		.skills {
+			text-align: right;
+			padding: 10px;
+			color: white;
+		}
+		.html {			animation: HTML 3.5s ease;
+			width: 70%; background-color: #4CAF50;
+		}
+		.CSS {			animation: CSS 3.5s ease;
+			width: 60%; background-color: #2196F3;
+		}
+		.MySql {			animation: MySql 3.5s ease;width: 85%; background-color: #f44336;}
+		.JAVA {			animation: JAVA 3.5s ease;width: 90%; background-color: #8cf441;}
+		.Android {			animation: Android 3.5s ease;width: 80%; background-color: #f45342;}
+		.C {			animation: C 3.5s ease;width: 85%; background-color: #41c4f4;}
+		.CSHARP {			animation: CSHARP 3.5s ease;width: 85%; background-color: #9242f4;}
+		.Assemble {
+			animation: Assemble 3.5s ease;
+			width: 75%; background-color: #d341f4;
+		}
+		@keyframes HTML{
+			from{width: 0%}
+			to{width: 70%}
+		}
+		@keyframes CSS{
+			from{width: 0%}
+			to{width: 60%}
+		}
+		@keyframes MySql{
+			from{width: 0%}
+			to{width: 85%}
+		}
+		@keyframes JAVA{
+			from{width: 0%}
+			to{width: 90%}
+		}
+		@keyframes Android{
+			from{width: 0%}
+			to{width: 80%}
+		}
+		@keyframes C{
+			from{width: 0%}
+			to{width: 85%}
+		}
+		@keyframes CSHARP{
+			from{width: 0%}
+			to{width: 85%}
+		}
+		@keyframes Assemble{
+			from{width: 0%}
+			to{width: 75%}
+		}
+
+	</style>
+</head>
+<body>
+
+	<!-- MAIN (Center website) -->
+	<div class="main">
+
+		<h1>李浩君</h1>
+		<hr>
+
+		<h2>個人資訊</h2>
+		<p>中原大學資管系</p>
+		<hr>
+		<h2>語言能力</h2>
+		<p>Taiwanese Mandarin、English、Taiwanese hakka</p>
+		<hr>
+		<center><div id="toeic">
+			<font style="position: relative;top: 20px; font-size: 20px">TOEIC</font><br>
+			<strong style="position: relative;top: 30px;font-size: 20px">610</strong>
+		</div></center>
+		<hr>
+		<h2>程式能力</h2>
+		<p>HTML</p>
+		<div class="container">
+			<div class="skills html">70%</div>
+		</div>
+
+		<p>CSS</p>
+		<div class="container">
+			<div class="skills CSS">60%</div>
+		</div>
+		<p>MySql</p>
+		<div class="container">
+			<div class="skills MySql">85%</div>
+		</div>
+		<p>JAVA</p>
+		<div class="container">
+			<div class="skills JAVA">90%</div>
+		</div>
+		<p>Android</p>
+		<div class="container">
+			<div class="skills Android">80%</div>
+		</div>
+		<p>C/C++</p>
+		<div class="container">
+			<div class="skills C">85%</div>
+		</div>
+		<p>C#</p>
+		<div class="container">
+			<div class="skills CSHARP">85%</div>
+		</div>
+		<p>Assemble</p>
+		<div class="container">
+			<div class="skills Assemble">75%</div>
+		</div>
+
+		<hr>
+		<div class="timeline">
+			<h2>學習經歷</h2>
+			<div class="content">
+				<h2>2014~2015</h2>
+				<i><p>中原大學資訊工程系</p></i>
+			</div>
+			<div class="content">
+				<h2>2015~2019</h2>
+				<i><p>中原大學資訊管理系</p></i>
+			</div>
+		</div>
+		<h2>修習&心得</h2>
+		<div class="row">
+			<div class="column">
+				<div class="content">
+					<img src="img/arduino.jpg" alt="Mountains" style="width:100%">
+					<h3>組合語言&嶔入式系統</h3>
+					<p>藉由操作8086晶片組等，以register(AX,BX,CX,DX)進行電腦底層運作，並了解晶片組之間溝通過程，並以簡單嶔入式系統晶片應用，體驗微電腦原理進程。</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="content">
+					<img src="img/java.jpg" alt="Lights" style="width:100%">
+					<h3>物件導向</h3>
+					<p>以java實作物件導向封裝、多型、繼承，學習物件導向精神及邏輯，以及Swing&AWT實作簡單GUI。</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="content">
+					<img src="img/CSHARP.jpg" alt="Lights" style="width:100%">
+					<h3>C#</h3>
+					<p>微軟.NET框架下的高接物件導向語言，雖然運行上效率不彰，但單就介面設計、監聽器設計上比JAVA方便許多，並且支援多線程運作。</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="content">
+					<img src="img/firebase.jpg" alt="Lights" style="width:100%">
+					<h3>Fire Base</h3>
+					<p>一款雲端NoSQL資料庫，樹狀結構，以firebase即時資料庫特色撰寫聊天室功能，以及LBS運用，同時FIREBASE也提供使用者驗證功能，相當方便。</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	</html>
